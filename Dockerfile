@@ -17,4 +17,7 @@ RUN 	apk add --update \
 	make VIMRUNTIMEDIR=/usr/share/vim/vim74 && \
 	make install && \
 	rm -rf /var/cache/apk/*
+
+WORKDIR /root/
+
 CMD vim
